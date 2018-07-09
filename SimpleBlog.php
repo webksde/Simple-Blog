@@ -329,7 +329,9 @@ class SimpleBlog extends SimpleBlogCommon{
 
 		$thumb_path = '//'.$server.$thumb_path;
 
-		echo '<img class="img-thumbnail" src="'.$thumb_path.'"/>';
+		// Print original image instead of the cropped thumbnail
+		// echo '<img class="img-thumbnail" src="'.$thumb_path.'"/>';
+		echo '<img class="img-thumbnail" src="' . $src . '"/>';
 	}
 
 
@@ -403,5 +405,3 @@ class SimpleBlog extends SimpleBlogCommon{
 
 
 }
-
-
